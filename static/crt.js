@@ -26,7 +26,7 @@ function snow(ctx, alpha) {
 }
 
 function animate() {
-	snow(ctx, 32);
+	snow(ctx, 16);
 	frame = requestAnimationFrame(animate);
 }
 

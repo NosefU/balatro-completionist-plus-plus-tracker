@@ -18,6 +18,19 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
+    background: transparent linear-gradient(to bottom, #85908c 0%, #323431 100%);
+    background-size: cover;
+    opacity: 0.5;
+    z-index: -1;
+  }
+
+body:has(.scanlines.on)::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-image: url('bg.webp');
     background-size: cover;
     background-position: center;
@@ -25,6 +38,7 @@ body::before {
     background-repeat: no-repeat;
     opacity: 0.5;
     z-index: -1;
+    animation: 3000ms linear 0ms normal forwards 1 running bg-on;
   }
 
 h1 {

@@ -30,7 +30,7 @@ function generateJokerGrid(jokers) {
         const jokerState = localStorage.getItem('card:' + joker.id) === 'true';
 
         const jokerHtml = `
-            <div class="joker-container col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+            <div class="joker-container col-6 col-sm-3 col-md-3 col-lg-2-10 col-xl-2-16 mb-4">
                 <div class="card pixel-corners h-100" id="${joker.id}" onclick="handleCardClick(this)">
                     <div class="card-body">
                         <img src="${staticDir}jokers/${joker.image}" alt="${joker.name}" class="card-img-bottom">

@@ -3,6 +3,20 @@
     src: url('m6x11plus.ttf') format('truetype');
 }
 
+@media (min-width: 1200px) {
+    .col-xl-2-16 {
+        flex: 0 0 12.5%;
+        max-width: 12.5%;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-lg-2-10 {
+        flex: 0 0 auto;
+        width: 20%;
+    }
+}
+
 body {
     font-family: 'pixelFont';
     background-color: rgba(42, 56, 57);
